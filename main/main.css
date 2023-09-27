@@ -1,3 +1,21 @@
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* fraunces-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -56,15 +74,15 @@ li, a{
     justify-content: space-between;
 }
 
-.nav-list{
+.nav__list{
     display: flex;
 }
 
-.nav-item + .nav-item{
+.nav__item + .nav__item{
     padding-left: 33px;
 }
 
-.nav-link{
+.nav__link{
     color: #83888F;
     font-family: Barlow;
     font-size: 12px;
@@ -75,15 +93,15 @@ li, a{
     text-transform: uppercase;
 }
 
-.nav-link:hover{
+.nav__link:hover{
     color: black;
 }
 
 /* main */
 
-/* LT */
+/* Happy */
 
-.LT .container{
+.Happy .container{
     
     background-image: url("../img/Bitmap.png");    
     background-repeat: no-repeat;
@@ -91,10 +109,10 @@ li, a{
     height: 600px;     
 }
 
-.LT-heading{
+.Happy__heading{
     width: 493px;
     color: #FEFCF7;
-    font-family: "Fraunces 9pt";
+    font-family: "Fraunces";
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
@@ -103,7 +121,7 @@ li, a{
     margin-left: 33px;
 }
 
-.LT-text{
+.Happy__text{
     width: 400px;
     color: #FEFCF7;
     font-family: "Barlow";
@@ -116,11 +134,59 @@ li, a{
     margin-left: 33px;
 }
 
-.LT-button{
-    padding: 20px 70px;
+.Happy__button{
+    padding: 15px 31px;
     border-radius: 6px;
     background: #66D2CF;
     color: white;
     margin-left: 33px;
-
 }
+
+/* Moonlight */
+
+.Moonlight{
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 200px ;
+}
+
+.Moonlight__info{
+    width: 1111px;
+    height: 196px;
+    background-image:url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Moonlight__list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    width: 1111px;
+    margin: 0;
+    margin-top: -50px;
+}
+
+.Moonlight__heading{
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: "Fraunces ";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 32px; 
+}
+
+.Moonlight__text{
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
